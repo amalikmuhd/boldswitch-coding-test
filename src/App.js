@@ -93,7 +93,7 @@ const App = () => {
     <div>
       <Navbar />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1>Products</h1>
+        <h1>Products Filter</h1>
       </div>
       <div className="CategoryDiv">
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -112,7 +112,7 @@ const App = () => {
 
         <div>
           <div>
-            <p> Price Range:</p>
+            <p>Filter By Price Range:</p>
           </div>
           <div>
             <input
@@ -131,7 +131,7 @@ const App = () => {
 
         <div>
           <div>
-            <p> Minimum Rating:</p>
+            <p>Filter By Minimum Rating:</p>
           </div>
           <div>
             <input
