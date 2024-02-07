@@ -47,14 +47,14 @@ const App = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const newProduct = {
-      id: products.length + 1, // Assign a unique ID to the new product
+      id: products.length + 1,
       name: formData.get("name"),
       category: formData.get("category"),
       price: parseFloat(formData.get("price")),
       rating: parseInt(formData.get("rating")),
     };
     addProduct(newProduct);
-    e.target.reset(); // Reset the form fields after adding the product
+    e.target.reset();
   };
 
   //   const handleAddProduct = () => {
@@ -68,9 +68,8 @@ const App = () => {
   //   addProduct(newProduct);
   // };
 
-  // Assuming you have a button or form to trigger updating a product
   const handleUpdateProduct = () => {
-    const productIdToUpdate = 2; // Example product ID to update
+    const productIdToUpdate = 2;
     const updatedProductData = {
       name: "Updated Product",
       price: 25,
@@ -79,9 +78,8 @@ const App = () => {
     updateProduct(productIdToUpdate, updatedProductData);
   };
 
-  // Assuming you have a button or form to trigger deleting a product
   const handleDeleteProduct = () => {
-    const productIdToDelete = 3; // Example product ID to delete
+    const productIdToDelete = 3;
     deleteProduct(productIdToDelete);
   };
 
