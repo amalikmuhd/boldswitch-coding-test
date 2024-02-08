@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./NavBarComponent/Navbar"; // Imported the Navbar component
 import "./Styles/Styles.css";
 
-// Dummy data for use in testing the E-commercer Product filter Applications
+// Dummy data for use in testing the E-commercer Product filter Application
 const initialProducts = [
   { id: 1, name: "Product 1", category: "Category A", price: 10, rating: 4 },
   { id: 2, name: "Product 2", category: "Category B", price: 20, rating: 3 },
